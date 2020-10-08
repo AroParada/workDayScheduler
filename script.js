@@ -32,7 +32,7 @@ hour.each(function(){
 $('.save').on('click', function (){
     // console.log( $( this ).siblings(".task") )
     let time = $(this).parent().attr("id");
-    let userInput = $(this).siblings(".text").val();
+    let userInput = $(this).siblings(".task").val();
     
 
     localStorage.setItem(time, userInput);
