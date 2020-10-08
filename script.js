@@ -15,10 +15,11 @@ $(".col3").addClass("saveBtn sBtni:hover ")
 
 hour.each(function(){
     let currentId = $(this).attr("id")
-    if(parseInt(currentId) == time){
+    currentId = parseInt(currentId);
+    if(currentId == time){
         $(this).addClass("present")
     }
-    else if(parseInt(currentId) > time){
+    else if(currentId > time){
         $(this).addClass("future");
     }
     else{
